@@ -1,0 +1,4 @@
+#!/bin/bash
+#Boton refrescar
+curl ifconfig.me > /tmp/ip.txt
+exit 0
