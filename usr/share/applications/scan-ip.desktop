@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=now ip
+Comment[es]=Te muestra la IP publica.
+Exec=scan-ip.x
+Terminal=0
+Type=Application
+Icon=/usr/share/scan-ip/pixmaps/scan-ip.gif
+Categories=Network;Application;

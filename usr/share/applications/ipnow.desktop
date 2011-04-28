@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ip now!
+Comment[es]=Te muestra la IP publica.
+Exec=ipnow
+Terminal=0
+Type=Application
+Icon=/usr/share/ipnow/pixmaps/ipnow.gif
+Categories=Network;Application;
