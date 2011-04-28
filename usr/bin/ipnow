@@ -20,7 +20,7 @@
 #       MA 02110-1301, USA.
 curl ifconfig.me > /tmp/ip.txt
 export CHILD='
-<window title="Acerca de" icon-name="dialog-information">
+<window title="Acerca de" icon-name="dialog-information" skip_taskbar_hint="true">
 <frame Acerca de>
 		<button>
 			<input file>"/usr/share/ipnow/pixmaps/mamalibre.png"</input>
