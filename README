@@ -2,6 +2,8 @@ Ip Now: Te muestra la ip publica con una amistosa ventana.
 
 Es una gui creada en gtkdialog.
 
+Dependencias: curl, gtkdialog (>= 2:0.7.20-4)
+
 
 Autor:
 twitter.com/mamalibre
