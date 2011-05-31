@@ -1,4 +1,4 @@
 #!/bin/bash
 #Boton refrescar
-curl ifconfig.me > /tmp/ip.txt
+curl --connect-timeout 3 ifconfig.me > /tmp/ip.txt &
 exit 0
