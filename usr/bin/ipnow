@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#       ip now 3.1
+#       ip now 3.1.1
 #       
 #       Copyright ©2011 Fabián Bonetti <mama21mama@mamalibre.com.ar>
 #       
@@ -18,9 +18,9 @@
 #       along with this program; if not, write to the Free Software
 #       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #       MA 02110-1301, USA.
-curl ifconfig.me > /tmp/ip.txt
+curl --connect-timeout 3 ifconfig.me > /tmp/ip.txt
 export CHILD='
-<window title="Acerca de" icon-name="dialog-information" skip_taskbar_hint="true">
+<window title="Acerca de" icon-name="dialog-information">
 <frame Acerca de>
 		<button>
 			<input file>"/usr/share/ipnow/pixmaps/mamalibre.png"</input>
@@ -29,7 +29,7 @@ export CHILD='
   <vbox>  
    <text>      
      <variable>CHILD</variable>			
-     <label>IP Now! - Version 3.1</label>     
+     <label>IP Now! - Version 3.1.1</label>     
    </text>
    <text>     
      <label>Copyright ©2011 Fabián Bonetti</label>     
