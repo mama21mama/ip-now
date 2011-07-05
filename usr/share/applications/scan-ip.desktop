@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=ip now!
+Name=now ip
 Comment[es]=Te muestra la IP publica.
-Exec=ipnow
+Exec=scan-ip.x
 Terminal=0
 Type=Application
-Icon=/usr/share/ipnow/pixmaps/ipnow.gif
+Icon=/usr/share/scan-ip/pixmaps/scan-ip.gif
 Categories=Network;Application;

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#       ip now 3.1.1
+#       ip now 3.1.2
 #       
 #       Copyright ©2011 Fabián Bonetti <mama21mama@mamalibre.com.ar>
 #       
@@ -18,6 +18,7 @@
 #       along with this program; if not, write to the Free Software
 #       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #       MA 02110-1301, USA.
+LIBPATH2="/usr/lib/ipnow" 
 curl --connect-timeout 3 ifconfig.me > /tmp/ip.txt
 export CHILD='
 <window title="Acerca de" icon-name="dialog-information">
@@ -29,7 +30,7 @@ export CHILD='
   <vbox>  
    <text>      
      <variable>CHILD</variable>			
-     <label>IP Now! - Version 3.1.1</label>     
+     <label>IP Now! - Version 3.1.2</label>     
    </text>
    <text>     
      <label>Copyright ©2011 Fabián Bonetti</label>     
@@ -76,7 +77,7 @@ export script='
 </progressbar> 
   <entry>
     <variable>ENTRY_DATE</variable>      
-    <input>downip & cat /tmp/ip.txt &</input>    
+    <input>'"$LIBPATH2"'/downip & cat /tmp/ip.txt &</input>    
   </entry>
   <button>
     <label>Refrescar</label>     
