@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-#       ip now 3.1.2
+#       ip now 3.1.3
 #       
-#       Copyright ©2011 Fabián Bonetti <mama21mama@mamalibre.com.ar>
+#       Copyright ©2011 Fabián Bonetti <mama21mama2000@yahoo.com.ar>
 #       
 #       This program is free software; you can redistribute it and/or modify
 #       it under the terms of the GNU General Public License as published by
@@ -19,18 +19,19 @@
 #       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #       MA 02110-1301, USA.
 LIBPATH2="/usr/lib/ipnow" 
-curl --connect-timeout 3 ifconfig.me > /tmp/ip.txt
+#curl --connect-timeout 3 ifconfig.me > /tmp/ip.txt
+wget -qO- queip.tk/ip > /tmp/ip.txt
 export CHILD='
 <window title="Acerca de" icon-name="dialog-information">
 <frame Acerca de>
 		<button>
 			<input file>"/usr/share/ipnow/pixmaps/mamalibre.png"</input>
-			<action>xdg-open http://mamalibre.com.ar &</action>
+			<action>xdg-open http://blog.mamalibre.com.ar &</action>
 		</button> 
   <vbox>  
    <text>      
      <variable>CHILD</variable>			
-     <label>IP Now! - Version 3.1.2</label>     
+     <label>IP Now! - Version 3.1.3</label>     
    </text>
    <text>     
      <label>Copyright ©2011 Fabián Bonetti</label>     
@@ -52,6 +53,10 @@ export CHILD='
 <label>IP Now es escrito y mantenido por Fabián Bonetti. Da la bienvenida a las sugerencias de mejoras o parches.</label>
 </text>
     <hbox>
+    <button>
+    <label>Colabora</label>
+    <action>xdg-open http://mamalibre.com.ar/donaciones/ &</action>      
+    </button>
     <button>
     <label>Source</label>
     <action>xdg-open /usr/share/doc/ipnow/source.html &</action>      
